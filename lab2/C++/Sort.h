@@ -1,12 +1,11 @@
-#ifndef Sort_h
-#define Sort_h
-namespace Sort {
-	void Show(const int arr[], int size);
-	void SortBubble(int arr[], const int start_index, const int end_index);
-	void SortInsertion(int arr[], const int start_index, const int end_index);
-	void SortSelection(int arr[], const int start_index, const int end_index);
-	void MinItem(int arr[], int size);
-	void MaxItem(int arr[], int size);
-	void swap(int& a, int& b);
-}
-#endif /* Sort_h */
+#ifndef SORT_H_INCLUDED
+#define SORT_H_INCLUDED
+
+void bubble_sort(int *A, int n, int start, int ends);
+void insertion_sort (int *A, int n, int start, int ends);
+void selection_sort(int *A, int n, int start, int ends);
+
+void show(int *A, int n);
+void SWAP(int &a, int &b);
+void New_Arr(int *A, int n);
+#endif // SORT_H_INCLUDED
